@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.kth.roberto.samplestoragejson.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:text="READ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="read"/>
+        <Button
+            android:text="READ Json 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="readJSON1"/>
+        <Button
+            android:text="READ Json 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="readJSON2"/>
+        <Button
+            android:text="ADD Json 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addAndPrint1"/>
+        <Button
+            android:text="ADD Json 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addAndPrint2"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
